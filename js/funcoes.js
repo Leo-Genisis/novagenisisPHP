@@ -1,5 +1,5 @@
 function exibirCategoria(categoria){
-    let elementos = document.getElementsByClassName('box_produto');
+    let elementos = document.getElementByClassName('categoria');
 
     console.log(elementos);
 
@@ -15,7 +15,7 @@ function exibirCategoria(categoria){
 }
 
 let exibirTodos = () => {
-    let elementos = document.getElementsByClassName('box_produto');
+    let elementos = document.getElementByClassName('container');
 
     for(var i=0; i<elementos.length; i++){
         elementos[i].style = "display:block"
@@ -24,10 +24,10 @@ let exibirTodos = () => {
 
 let destaque = (imagem) =>{
     console.log(imagem);
-    imagem.width = 400;
+    imagem.width = 500;
 }
 
 let miniatura = (imagem) =>{
     console.log(imagem);
-    imagem.width = 200;
+    imagem.width = 300;
 }

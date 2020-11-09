@@ -19,17 +19,20 @@
             $result = $conn->query($sql);  
             }
         ?>
-        <hr>
-         <h1>Mande sua mensagem e responderemos o mais breve possível</h1>
-         <form method="POST" action="">
-             <label for="nCompleto">Nome Completo:</label><br>
-             <input name="nome" type="text" id="nCompleto"><br>
-             <label for="tel">Telefone</label><br>
-             <input name="tel"type="number" id="tel"><br>
-             <label for="msg">Mensagem:</label><br>
-            <textarea name="msg" id="msg" cols="50" rows="20"></textarea><br>
-            <input type="submit" value="enviar">
-         </form>
+        <div class=container>
+            <h1>Mande sua mensagem e responderemos o mais breve possível</h1>
+            <div class="form-group">
+                <form method="POST" action="">
+                    <label for="nCompleto">Nome Completo:</label><br>
+                    <input name="nome" type="text" id="nCompleto"><br>
+                    <label for="tel">Telefone</label><br>
+                    <input name="tel"type="number" id="tel"><br>
+                    <label for="msg">Mensagem:</label><br>
+                    <textarea name="msg" id="msg" cols="37" rows="10"></textarea><br>
+                    <input  class= "btn bg-dark text-primary"type="submit" value="enviar">
+                </form>
+            </div>
+        </div>
 
          
 
